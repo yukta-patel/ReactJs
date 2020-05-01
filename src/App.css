@@ -3,16 +3,19 @@
 }
 .container
 {
-  background-color: rgb(176, 192, 192);
+  /* background-color: rgb(176, 192, 192); */
+  background-color: rgb(218, 247, 218);
+  padding-bottom: 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-family: 'Roboto', sans-serif
+  
 }
 
 div[id="left-container"]
 {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 35%;
     margin-top: 100px;
     background-color: white;
@@ -21,7 +24,7 @@ div[id="left-container"]
 
 div[id="right-container"]
 {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 35%;
   margin-top: 100px;
   
@@ -47,16 +50,45 @@ div[id="left-container"] span
     color: rgb(23, 135, 184);
 }
 
+.text-1
+{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.div-user
+{
+  width:80% ;
+}
+
+.img-user
+{
+  height: 30px;
+  width: 30px;
+  margin-left: -50px;
+  margin-top: 10px;
+  opacity: 0.3;
+}
+
 .input_userId
 {
     border: none;
     border-bottom: 2px solid grey;
     padding-top: 5px;
-    width: 75%;
+    width: 90%;
     height: 40px;
     font-size: 22px;
     margin-left: 40px;
-    
+}
+
+.img-pw
+{
+  height: 50px;
+  width: 50px;
+  margin-left: -58px;
+  margin-top: 30px;
+  opacity: 0.3;
 }
 
 .input_pw
@@ -64,7 +96,7 @@ div[id="left-container"] span
     border: none;
     border-bottom: 2px solid grey;
     padding-top: 40px;
-    width: 75%;
+    width: 90%;
     height: 40px;
     font-size: 22px;
     margin-left: 40px;
@@ -116,10 +148,74 @@ input.check_box
 .bottom_container
 {
   padding-left: 45px;
-  margin-top: 40px ;
+  margin: 40px 0px 100px 0px ;
+  display: flex;
+  flex-direction: row;
+  
 }
 
 .login_with
 {
+  margin-top: 10px;
   font-size: 18px;
+}
+
+.img
+{
+  height: 50px;
+  width: 50px;
+  margin-left: 25px;
+}
+
+.logo-fb
+{
+  margin-left: 200px;
+}
+
+.wrapper
+{
+  position: relative;
+}
+
+.laptop-img
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.overlay
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(238, 111, 189, 0.5);
+}
+
+.header
+{
+  position: absolute;
+  color: white;
+  top: 20%;
+  left: 33%;
+  font-size: 50px;
+  border-bottom: 2px solid white;
+}
+
+.content
+{
+  position: absolute;
+  color: white;
+  top: 40%;
+  left: 20%;
+  font-size: 30px;
+  text-align: center;
 }
