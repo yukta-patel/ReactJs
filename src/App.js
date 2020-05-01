@@ -9,51 +9,54 @@ import twitter from './twitter.jpg'
 import google from './google+.jpg'
 
 
+    const App=() => {
+      return(
+      <div className="container">
+         <div className="left-container">
+           <h1 className="heading">Login</h1>
+           <p className="content-p">Don't have an account? <span>Creat your account</span>, it takes less<br></br>than a minute</p>
+           <form>
+             <div className="text-1">
+               <div className="div-user"><input type="text" className="input-userId" name="UserName" placeholder="Username"></input></div>
+               <div><img className="img-user" src={user}></img></div>
+            </div>
+            
+             <div className="text-1">
+               <div className="div-user"><input type="text" className="input-pw" name="Password" placeholder="Password"></input></div>
+               <div><img className="img-pw" src={password}></img></div>
+             </div>
 
 
+             <div className="sub-container">
+               <input type="checkbox" className="check-box" name="checkBox"></input>
+               <div className="remember-me">Remember Me</div>
+               <a href="#" className="forgot-pw">Forgot Password?</a>
+             </div>
 
-function App() {
-  return (
-    
-    <div id="container" className="container">
-        <div id="left-container">
-          <h1>Login</h1>
-          <p>Don't have an account? <span>Creat your account</span>, it takes less<br></br>than a minute</p>
-          <div className="text-1">
-            <div className="div-user"><input type="text" className="input_userId" placeholder="Username"></input></div>
-            <div><img className="img-user" src={user}></img></div>
-          </div>
-          
-          <div className="text-1">
-            <div className="div-user"><input type="text" className="input_pw" placeholder="Password"></input></div>
-            <div><img className="img-pw" src={password}></img></div>
-          </div>
+             <div><button className="btn-login">LOGIN</button></div>
 
-          <div className="sub-container">
-            <div><input type="checkbox" className="check_box"></input></div>
-            <div className="remember_me">Remember Me</div>
-            <div><a href="#" className="forgot_pw">Forgot Password?</a></div>
-          </div>
+       
 
-          <div><button className="btn_login">LOGIN</button></div>
+             <div className="bottom-container">
+               <div className="login-with">Or Login With</div>
+               <img className="img-size logo-fb" src={facebook}></img>
+               <img className="img-size" src={twitter}></img>
+               <img className="img-size" src={google}></img>
+             </div>
+         </form>
 
-          <div className="bottom_container">
-            <div className="login_with">Or Login With</div>
-            <div><img className="img logo-fb" src={facebook}></img></div>
-            <div><img className="img" src={twitter}></img></div>
-            <div><img className="img" src={google}></img></div>
-          </div>
-        </div>
+         </div>
 
-        <div id="right-container" className="wrapper">
-          <img className="laptop-img" src={laptop} alt="laptop image"></img>
-          <div className="overlay"></div>
-          <div className="header">Welcome</div>
-          <div className="content">Sed do eiusmod temporut labore et<br></br> dolore magna aliqua. Your perfect<br></br>place to buy and sell.</div>
-        </div>
-    </div>
-    
-  )
-}
+
+         <div className="right-container wrapper">
+           <img className="laptop-img" src={laptop} alt="laptop image"></img>
+           <div className="overlay"></div>
+           <div className="header">Welcome</div>
+           <div className="content">Sed do eiusmod temporut labore et<br></br> dolore magna aliqua. Your perfect<br></br>place to buy and sell.</div>
+         </div>
+     </div>
+    )
+    }
+  
 
 export default App;

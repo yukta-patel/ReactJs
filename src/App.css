@@ -13,7 +13,7 @@
   
 }
 
-div[id="left-container"]
+.left-container
 {
     /* border: 1px solid black; */
     width: 35%;
@@ -22,7 +22,7 @@ div[id="left-container"]
     /* padding: 30px; */
 }
 
-div[id="right-container"]
+.right-container
 {
   /* border: 1px solid black; */
   width: 35%;
@@ -30,21 +30,21 @@ div[id="right-container"]
   
 }
 
-div[id="left-container"] h1
+.heading
 {
   color:rgb(56, 54, 54);
   padding-left: 40px;
   padding-top: 50px;
 }
 
-div[id="left-container"] p
+.content-p
 {
     font-size: 20px;
     color: gray;
     padding-left: 40px;
 }
 
-div[id="left-container"] span
+span
 {
     font-size: 20px;
     color: rgb(23, 135, 184);
@@ -71,7 +71,7 @@ div[id="left-container"] span
   opacity: 0.3;
 }
 
-.input_userId
+.input-userId
 {
     border: none;
     border-bottom: 2px solid grey;
@@ -91,7 +91,7 @@ div[id="left-container"] span
   opacity: 0.3;
 }
 
-.input_pw
+.input-pw
 {
     border: none;
     border-bottom: 2px solid grey;
@@ -110,13 +110,13 @@ div[id="left-container"] span
   margin-left: 40px;
 }
 
-input.check_box
+input.check-box
 {
   height: 20px;
   width: 20px;
 }
 
-.remember_me
+.remember-me
 {
   font-size: 20px;
   color: rgb(88, 86, 86);
@@ -124,7 +124,7 @@ input.check_box
   margin-top: 2px;
 }
 
-.forgot_pw
+.forgot-pw
 {
   font-size: 20px;
   color: rgb(88, 86, 86);
@@ -132,7 +132,7 @@ input.check_box
   text-decoration: none;
 }
 
-.btn_login
+.btn-login
 {
   margin-top: 45px;
   border-radius: 50px;
@@ -145,7 +145,7 @@ input.check_box
   margin-left: 40px;
 }
 
-.bottom_container
+.bottom-container
 {
   padding-left: 45px;
   margin: 40px 0px 100px 0px ;
@@ -154,13 +154,13 @@ input.check_box
   
 }
 
-.login_with
+.login-with
 {
   margin-top: 10px;
   font-size: 18px;
 }
 
-.img
+.img-size
 {
   height: 50px;
   width: 50px;
