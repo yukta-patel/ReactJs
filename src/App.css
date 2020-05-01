@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+*{
+  user-select: none;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container
+{
+  background-color: rgb(176, 192, 192);
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: 'Roboto', sans-serif
+}
+
+div[id="left-container"]
+{
+    border: 1px solid black;
+    width: 35%;
+    margin-top: 100px;
+    background-color: white;
+    /* padding: 30px; */
+}
+
+div[id="right-container"]
+{
+  border: 1px solid black;
+  width: 35%;
+  margin-top: 100px;
+  
+}
+
+div[id="left-container"] h1
+{
+  color:rgb(56, 54, 54);
+  padding-left: 40px;
+  padding-top: 50px;
+}
+
+div[id="left-container"] p
+{
+    font-size: 20px;
+    color: gray;
+    padding-left: 40px;
+}
+
+div[id="left-container"] span
+{
+    font-size: 20px;
+    color: rgb(23, 135, 184);
+}
+
+.input_userId
+{
+    border: none;
+    border-bottom: 2px solid grey;
+    padding-top: 5px;
+    width: 75%;
+    height: 40px;
+    font-size: 22px;
+    margin-left: 40px;
+    
+}
+
+.input_pw
+{
+    border: none;
+    border-bottom: 2px solid grey;
+    padding-top: 40px;
+    width: 75%;
+    height: 40px;
+    font-size: 22px;
+    margin-left: 40px;
+}
+
+.sub-container
+{
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+input.check_box
+{
+  height: 20px;
+  width: 20px;
+}
+
+.remember_me
+{
+  font-size: 20px;
+  color: rgb(88, 86, 86);
+  padding-left: 5px;
+  margin-top: 2px;
+}
+
+.forgot_pw
+{
+  font-size: 20px;
+  color: rgb(88, 86, 86);
+  padding-left: 185px;
+  text-decoration: none;
+}
+
+.btn_login
+{
+  margin-top: 45px;
+  border-radius: 50px;
+  height: 55px;
+  width: 150px;
   color: white;
+  background-color:rgb(23, 135, 184);
+  font-size: 18px;
+  font-weight:bold;
+  margin-left: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.bottom_container
+{
+  padding-left: 45px;
+  margin-top: 40px ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login_with
+{
+  font-size: 18px;
 }
